@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>  
+  <body> 
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="facebook" viewBox="0 0 32 32">
+        <path fill="#fff" d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"></path>
+      </symbol><!--facebook-->
+
+      <symbol id="twitter" viewBox="0 0 48 48">
+        <path fill="#fff" d="M0 44c0 2.21 1.79 4 4 4h40c2.21 0 4-1.79 4-4l-0-40c0-2.21-1.79-4-4-4h-40c-2.21 0-4 1.79-4 4v40zM31 25h-10v3c0 1.1 0.9 2 2 2h8c2.21 0 4 1.79 4 4s-1.79 4-4 4l-10-0c-4.42 0-8-3.58-8-8v-17c0-2.21 1.79-4 4-4s4 1.79 4 4v4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4z"></path>
+      </symbol><!-- twitter-->
+
+      <symbol id="gHub" viewBox="0 0 32 32">
+        <path fill="#fff" d="M16 0.395c-8.836 0-16 7.163-16 16 0 7.069 4.585 13.067 10.942 15.182 0.8 0.148 1.094-0.347 1.094-0.77 0-0.381-0.015-1.642-0.022-2.979-4.452 0.968-5.391-1.888-5.391-1.888-0.728-1.849-1.776-2.341-1.776-2.341-1.452-0.993 0.11-0.973 0.11-0.973 1.606 0.113 2.452 1.649 2.452 1.649 1.427 2.446 3.743 1.739 4.656 1.33 0.143-1.034 0.558-1.74 1.016-2.14-3.554-0.404-7.29-1.777-7.29-7.907 0-1.747 0.625-3.174 1.649-4.295-0.166-0.403-0.714-2.030 0.155-4.234 0 0 1.344-0.43 4.401 1.64 1.276-0.355 2.645-0.532 4.005-0.539 1.359 0.006 2.729 0.184 4.008 0.539 3.054-2.070 4.395-1.64 4.395-1.64 0.871 2.204 0.323 3.831 0.157 4.234 1.026 1.12 1.647 2.548 1.647 4.295 0 6.145-3.743 7.498-7.306 7.895 0.574 0.497 1.085 1.47 1.085 2.963 0 2.141-0.019 3.864-0.019 4.391 0 0.426 0.288 0.925 1.099 0.768 6.354-2.118 10.933-8.113 10.933-15.18 0-8.837-7.164-16-16-16z"></path>
+      </symbol> <!--github--> 
+
+      <symbol id="skype" viewBox="0 0 455.731 455.731">
+        <path d="M0,0v455.731h455.731V0H0z M306.808,384.297c-15.537,0-30.082-4.213-42.588-11.532c-9.097,1.77-18.492,2.708-28.107,2.708   c-80.82,0-146.338-65.518-146.338-146.338c0-9.615,0.938-19.01,2.708-28.107c-7.319-12.507-11.532-27.052-11.532-42.588   c0-46.65,37.817-84.467,84.467-84.467c15.537,0,30.082,4.214,42.589,11.532c9.097-1.77,18.492-2.708,28.107-2.708   c80.82,0,146.338,65.518,146.338,146.338c0,9.615-0.938,19.01-2.708,28.107c7.319,12.507,11.532,27.052,11.532,42.588   C391.275,346.48,353.458,384.297,306.808,384.297z" fill="#FFFFFF"/>
+        <path d="M247.392,206.635c-54-10.5-57.5-27-44.5-38.5s51.642-16.665,62.5,3.5c10.5,19.5,18,27.5,32.5,24   c13.833-3.339,15.833-22.5,10-34c-4.707-9.279-26-33-68-33s-86,15.5-86,54s40,55.5,78.5,61s47.5,22,42.5,34s-21.5,23.5-46.5,21   s-36.535-23.433-40-34c-3.333-10.167-15-11.5-20.5-11s-23,7.5-15,32s34,44,86,44s82.5-32,82.5-62.5   S301.392,217.135,247.392,206.635z" fill="#FFFFFF"/>
+      </symbol>
+
+    </svg>
+    <!-- <div id="background"> -->
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds">     
+      </div>
+      <!-- Nav -->
+      <header class="indexHeader">
+        <img class="hdr-img bkr2" src="img/hdr3.jpg" alt="header-image">
+        <h1 class="name"><a href="#"><i>Viktor Yakov</i></a></h1>
+        <nav>
+          <div class="navTabs">
+            <div class="svg-wrapper">
+              <svg class="svgNav-1" height="40" width="60" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape-1" height="40" width="60"/>
+              </svg>
+              <div class="text position-1"><a href="index.html">Work</a></div>
+            </div>
+            <div class="svg-wrapper">
+              <svg class="svgNav-2" height="40" width="95" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape-2" height="40" width="95"/>
+              </svg>
+              <div class="text"><a href="aboutme.html">About Me</a></div>
+            </div>
+            <!-- <div class="svg-wrapper">
+              <svg class="svgNav-3" height="40" width="85" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape-3" height="40" width="85"/>
+              </svg>
+              <div class="text position-2">Contacts</div>
+            </div> -->
+          </div>
+        </nav>
+      </header>
+
+      <!--End of Nav-->
+
+      <!--Main Content-->
+      <main class="main">
+
+        <div id="container">
+        
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/1.png" alt="Project number 1">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-1.jpg" alt="Space background">
+              <div class="buttons">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v1-Portfolio-Update/">View Site</a></div>             
+                 <div class='popup'>
+                  <div>This is my very first project. I used html5 and css3 for building portfolio home page. I've learned a lot of HTML tags attributes and managed to apply my newly CSS3 skills.</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/2.png" alt="Project number 2">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-2.jpg" alt="Space background">
+              <div class="buttons">              
+                <div class="button1">Read Me</div>             
+                <div class="button"><a href="https://viktoryakov.github.io/v2-Responsive-Layout/">View Site</a></div>
+                <div class='popup'>
+                  <div>This is my second project. For the first time, I had to deal with mobile first responsive layout conception. I used HTML5 and CSS3 to be able, to achieve fully responsive page for mobile, tablet and desktop devices.</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/3.png" alt="Project number 3">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-3.jpg" alt="Space background">
+              <div class="buttons">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v3-Online-Registration-Form/">View Site</a></div>                 
+                <div class='popup'>
+                  <div>This is my third project. I learned how to build responsive mobile friendly forms. I used HTML5 input types and attributes, CSS3 for styling the form to be fully responsive.</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/4.png" alt="Project number 4">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-4.jpg" alt="Space background">
+              <div class="buttons">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v4-Interactive-Photo-Gallery/">View Site</a></div>                    
+                <div class='popup'>
+                  <div>This is my fourth project. The interactive photo gallery. It is a proper, introduction to the powers of JavaScript and it's library jQuery. I used HTML5, CSS3, JS and JQ. It turned out very challenging and interesting..</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/5.png" alt="Project number 5">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-5.jpg" alt="Space background">
+              <div class="buttons">              
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v5-CSS-to-SASS/">View Site</a></div>             
+                <div class='popup'>
+                  <div>This is my fifth project. I refactored my first project CSS3 with one of the CSS3 preprocessors "SASS". Also improved the overall look of the page plus consolidating my previous skills and applying newly learned skills.</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/6.png" alt="Project number 6">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-6.jpg" alt="Space background">
+              <div class="buttons">                
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v6-SVG-UPDATE/">View Site</a></div>                             
+                <div class='popup'>
+                  <div>This is my sixth project. In this project, I had to change all of the png files with SVG files. So I learned a lot for SVG files and how useful, light and flexible they are. Overall I started to love SVGs.</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/7.png" alt="Project number 7">
+            </div>
+            <div class = "back">
+              <div class="buttons">
+                <img class="background" src="img/planet-7.jpg" alt="Space background">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v7-Interactive-Video-Player/">View Site</a></div>                
+                <div class='popup'>
+                  <div>This is my seventh project. This one proved to be a hard nutshell. I had to build from scratch interactive video player using JS and HTML5 Video API, with transcription highlight as video progress. </div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/8.png" alt="Project number 8">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-8.jpg" alt="Space background">
+              <div class="buttons">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v8-Accessibility/">View Site</a></div>                               
+                <div class='popup'>
+                  <div>This is my eighth project. This project was fairly easy, but this doesn't diminish its importance. I learned how to build more Accessible pages with proper colors and Accessible Rich Internet Applications (ARIA).</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/9.png" alt="Project number 9">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-9.jpg" alt="Space background">
+              <div class="buttons">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v9-Web-App-Dashboard/">View Site</a></div>                
+                  <div class='popup'>
+                  <div>This is my ninth project. I used provided mockup and few icons. I ended up with an amazing fully responsive dashboard with, a sticky navigation bar and it was built with HTML5, CSS3, JS, JQ, and JS library chart.js.</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/10.png" alt="Project number 10">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-10.jpg" alt="Space background">
+              <div class="buttons">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v10-Public-API-to-Create-a-Gallery/">View Site</a></div>                
+                <div class='popup'>
+                  <div>This is my tenth project. It's mostly AJAX, JavaScript based, also used the light-box.js plugin. I learned a tiny fraction of the power of AJAX. I believe there are a lot of AJAX things to be learned. </div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class = "ct">
+          <div class = "flipper">
+            <div>
+              <img class = "front" src="img/11.png" alt="Project number 11">
+            </div>
+            <div class = "back">
+              <img class="background" src="img/planet-11.jpg" alt="Space background">
+              <div class="buttons">               
+                <div class="button1">Read Me</div>
+                <div class="button"><a href="https://viktoryakov.github.io/v11-Optimizing-a-Site-for-Performance/">View Site</a></div>               
+                <div class='popup'>
+                  <div>This is my eleventh project. I took an unoptimized page used my skills to optimize images. Also used gulp.js to optimize, and combine some of the tasks. So the page can load faster and with less heavy elements to load up.</div>
+                  <svg height="50" width="100">
+                    <path d="M0 50 L40 0 L65 0 Z" />             
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      </main> 
+  
+      <!-- End of the Main Content -->
+
+      <footer class="footer"><!-- Footer -->
+        <img src="img/footer2.jpg" alt="" class="bkr2">
+        <div class="container-1">
+          <h1><b>Viktor</b><i>Yakov</i></h1>
+          <div>
+            A little bit about me.
+I have a passion for learning new things. I'm learning from absolutely everything around me, soaking up like a sponge everything valuable. I share the same passion for learning new things not only from the "real world", but also from the "virtual world".
+          </div>
+        </div>
+
+        <!-- <div class="container-2">
+          <p>&copy;Copyright The Code Review &reg;</p>
+        </div> -->
+
+        <div class="container-3">
+          <h1>Social Icons</h1>
+          <ul id="socialIcons">
+            <li>
+             <a href="">
+              <svg class="svgEffect">
+                <use xlink:href="#facebook" />
+              </svg>
+             </a> 
+            </li>
+            <li>
+             <a href="">
+              <svg class="svgEffect">
+                <use xlink:href="#twitter" />
+              </svg>
+             </a> 
+            </li>
+            <li>
+             <a href="">
+              <svg class="svgEffect">
+                <use xlink:href="#gHub" />
+              </svg>
+             </a> 
+            </li>
+            <li>
+             <!-- <a href="">
+              <svg class="svgEffect">
+                <use xlink:href="#skype" />
+              </svg>
+             </a> 
+            </li> -->
+          </ul>
+        </div>
+        
+      </footer><!--End Footer -->
+
+      <!-- Scripts -->
+      <script src="js/jquery.js"></script>
+      <script src="js/app.js"></script>
+      <script src="http://localhost:35729/livereload.js"></script>
+      <!-- End of Scripts -->
+    <!-- </div> -->
+  </body>
+</html>

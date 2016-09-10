@@ -1,0 +1,239 @@
+.footer {
+    display: flex;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    color: white;
+    position: absolute;
+    z-index: 2000;
+    top: 305%;
+    width: 100%;
+    height: 440px;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 50px;
+    @include respond-to(tablet) {
+      top: 1040px;
+      height: 300px;
+      margin-top: 10px;
+    }
+    @include respond-to(desktop) {
+      top: 900px;
+    }
+
+  .bkr2 {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    // @include respond-to(tablet) {
+    //   // height: 250px;
+    // }
+  }
+
+  @include respond-to(tablet) {
+    flex-wrap: nowrap;
+  }
+
+  & h1 {
+    color: white;
+    letter-spacing: .15em;
+    text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a, 
+      -5px 10px 1px #e4e3e2;
+    text-align: center;
+  }
+
+  .container-1 {
+    z-index: 1;
+    width: 100%;
+    @include respond-to(tablet) {
+      width: 40%;
+      align-self: center;
+      margin-left: 50px;
+    }
+    @include respond-to(desktop) {
+      margin-left: 0;
+    }
+  }
+
+  .container-1 div {
+    margin-left: 30px;
+    max-width: 350px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+
+  .container-1 h1 {
+    width: 100%;
+    // margin: 0 0 30px 50px;
+    text-align: center;
+    margin-bottom: 47px;
+  }
+
+  // .container-2 {
+  //   align-self: center;
+  //   z-index: 1;
+  //   order: 1;
+  //   width: 100%;
+  //   text-align: center;
+  //   @include respond-to(tablet) {
+  //     align-self: flex-end;
+  //     order: 0;
+  //   }   
+  // }
+
+  .container-3 {
+    align-self: initial;
+    z-index: 1;
+    width: 90%;
+    margin: auto;
+    margin-right: 4px;
+    @include respond-to(tablet) {
+      width: 38%;
+      margin-top: 20px;
+      margin-left: 200px;
+    }
+    @include respond-to(desktop) {
+      // margin-left: 280px;
+      // padding-left: 200px;
+    }
+    
+  }
+
+  #socialIcons {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+    // margin: 60px 1px 60px 60px;
+    // padding-left: 60px;
+  }
+
+  .svgEffect:hover {
+    transition: .4s ease-out;
+    stroke: black;
+  }
+
+}
+
+// #ftr1 {
+//   top: 151%;
+//   // margin-bottom: 50px;
+//   @include respond-to(tablet) {
+//     top: 110%;
+//   }
+// }
+
+.footer1 {
+    display: flex;
+    flex-direction: inherit;
+    flex-wrap: wrap;
+    color: white;
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    height: 440px;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 30px;
+    @include respond-to(tablet) {
+      // top: 1040px;
+      height: 250px;
+    }
+
+    .bkr2 {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    // @include respond-to(tablet) {
+    //   // height: 250px;
+    // }
+  }
+
+  @include respond-to(tablet) {
+    flex-wrap: nowrap;
+  }
+
+  & h1 {
+    color: white;
+    letter-spacing: .15em;
+    text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #767474, 
+      -3px 6px 1px #787777, 
+      -4px 8px 1px #7b7a7a, 
+      -5px 10px 1px #e4e3e2;
+    text-align: center;
+  }
+
+  .container-1 {
+    z-index: 1;
+    width: 80%;
+    margin: auto;
+    @include respond-to(tablet) {
+      width: 40%;
+      display: block;
+      align-self: center;
+    }
+  }
+
+  .container-1 h1 {
+    margin-bottom: 47px;
+}
+
+  // .container-2 {
+  //   align-self: center;
+  //   z-index: 1;
+  //   order: 1;
+  //   width: 100%;
+  //   text-align: center;
+  //   @include respond-to(tablet) {
+  //     align-self: flex-end;
+  //     order: 0;
+  //   }   
+  // }
+
+  .container-3 {
+    align-self: initial;
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+    @include respond-to(tablet) {
+      width: 38%;
+      margin-top: 20px;
+    }
+    
+  }
+
+  #socialIcons {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    padding-left: 30px;
+  }
+
+  .svgEffect:hover {
+    transition: .4s ease-out;
+    stroke: black;
+  }
+}
+
+svg {
+  width: 38px;
+
+  @include respond-to(tablet) {
+    width: 46px;
+  }
+  @include respond-to(desktop) {
+    width: 52px;
+  }
+} 

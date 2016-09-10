@@ -1,0 +1,55 @@
+html {
+	height: 100vh;
+}
+body {
+	height: 100%;
+	
+	h2{
+	    margin-top: 30px;
+	    text-align: center;
+	}
+	header h2{
+	    font-size: 22px;
+	    margin: 0 auto;
+	    padding: 10px 0;
+	    width: 80%;
+	    text-align: center;
+	}
+	header a, a:visited {
+	    text-decoration:none;
+	    color:#fcfcfc;
+	}
+}
+
+main {
+	
+	// margin-bottom: 10% 0 13% 0;
+
+
+	section {
+		height: inherit;
+	}
+}
+
+ul {
+	padding-left: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 50%;
+	height: 85%;
+	// margin: 22px;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+svg {
+	width: 32px;
+}

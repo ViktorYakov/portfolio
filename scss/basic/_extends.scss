@@ -1,0 +1,35 @@
+// padding
+%padding {
+	padding: 0;
+}
+
+// margins 
+%margin {
+	margin: 0;
+}
+
+// marginAuto
+%marginAuto {
+	margin: auto;
+}
+
+// Flex Display
+
+%flex {
+	display: flex;
+}
+
+%textAlign {
+	text-align: center;
+}
+
+// Clearfix
+
+%clearfix {
+	&:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
+}
+

@@ -1,0 +1,55 @@
+//Media querie 
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media (min-width: 320px) { @content; } 
+  }
+  @else if $media == tablet {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $media == desktop {
+    @media (min-width: 1024px) { @content; }
+  }
+}
+
+
+@mixin layouts ($margin: null, $padding: null, $border: null, $borderRadius: null, $bckGrClr: null, $width: null) {
+	width: $width;
+	margin: $margin;
+	padding: $padding;
+	border: $border;
+	border-radius: $borderRadius;
+	background-color: $bckGrClr;
+}
+
+@mixin on-circle($item-count, $circle-width, $circle-height, $item-width, $item-height, $item-margin, $circle-size) { 
+  position: relative;
+  width:  $circle-width;
+  height: $circle-height;
+  padding: 0;
+  border-radius: 50%; 
+  list-style: none;       
+  
+  > * {
+    display: block;
+    position: absolute;
+    top:  33.5%; 
+    left: 33%;
+    width:  $item-width;
+    height: $item-height;
+    margin: -($item-margin / 2);
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform: 
+          rotate($rot * 1deg) 
+          translate($circle-size / 2) 
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}

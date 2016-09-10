@@ -1,0 +1,1 @@
+body:before{white-space:pre;font-family:monospace;content:"Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 43 of scss/aboutme/cards.scss\A \A 38:   margin: 2px;\A 39: }\A 40: \A 41: .skills li:nth-child(odd) {\A 42:   background: #0399ff;\A 43: }"}
