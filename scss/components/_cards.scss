@@ -1,15 +1,11 @@
 
 .flex {
-    // display: -ms-flexbox;      /* TWEENER - IE 10 */
-    // display: flex; 
-    // max-width: 1200px;
-    // min-width: 900px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 150px auto 50px;
 
   @include respond-to(tablet) {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: -ms-flexbox;      
       display: flex; 
       max-width: 1100px;
       min-width: 800px;
