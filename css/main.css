@@ -846,11 +846,11 @@ ul.skills {
   height: 440px;
   background-size: cover;
   overflow: hidden;
-  margin-top: 30px;
 }
 @media (min-width: 768px) {
   .footer1 {
     height: 250px;
+    margin-top: 30px;
   }
 }
 .footer1 .bkr2 {
@@ -870,6 +870,12 @@ ul.skills {
   letter-spacing: .15em;
   text-shadow: 1px -1px 0 #767676,  -1px 2px 1px #737272,  -2px 4px 1px #767474,  -3px 6px 1px #787777,  -4px 8px 1px #7b7a7a,  -5px 10px 1px #e4e3e2;
   text-align: center;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .footer1 h1 {
+    margin-bottom: auto;
+  }
 }
 .footer1 .container-1 {
   z-index: 1;
@@ -881,6 +887,12 @@ ul.skills {
     width: 40%;
     display: block;
     align-self: center;
+    margin-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer1 .container-1 div {
+    max-width: 380px;
   }
 }
 .footer1 .container-1 h1 {
@@ -895,12 +907,19 @@ ul.skills {
 @media (min-width: 768px) {
   .footer1 .container-3 {
     width: 38%;
-    margin-top: 20px;
+    margin-top: auto;
   }
 }
-@media (min-width: 1024px) {
-  .footer1 .container-3 {
-    margin-top: 31px;
+.footer1 .container-3 #socialIcons {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 13%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .footer1 .container-3 #socialIcons {
+    margin-top: 70px;
   }
 }
 .footer1 .svgEffect:hover {
