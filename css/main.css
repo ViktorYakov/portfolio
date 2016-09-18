@@ -21,10 +21,6 @@ body header a, body a:visited {
   color: #fcfcfc;
 }
 
-main section {
-  height: inherit;
-}
-
 ul {
   padding-left: 0;
   list-style-type: none;
@@ -34,13 +30,8 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 50%;
-  height: 85%;
-}
-
-.invisible {
-  visibility: hidden;
+.hidden {
+  display: none;
 }
 
 svg {
@@ -53,7 +44,7 @@ svg {
   min-width: 300px;
   position: relative;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -70,6 +61,7 @@ svg {
 @media (min-width: 1024px) {
   #container {
     max-width: 950px;
+    margin: auto;
   }
 }
 
@@ -149,7 +141,7 @@ svg {
 
 .button {
   left: 135px;
-  bottom: 170px;
+  bottom: 160px;
 }
 @media (min-width: 768px) {
   .button {
@@ -160,7 +152,7 @@ svg {
 
 .button1 {
   left: 15px;
-  bottom: 120px;
+  bottom: 110px;
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -214,9 +206,9 @@ svg {
   display: none;
   position: fixed;
   z-index: 1000000;
-  left: -2vw;
+  left: 20px;
   margin-left: 35px;
-  top: 10vh;
+  top: 12vh;
   margin-top: -200px;
   opacity: 1;
   transition: all 1s;
@@ -231,19 +223,18 @@ svg {
 .popup div {
   width: 100%;
   max-width: 250px;
-  height: 160px;
+  height: 170px;
   font-size: 15px;
-  padding: 10px 10px 10px;
+  padding: 15px 10px 1px 20px;
   background-color: #e6e6fa;
   border-radius: 40px;
   color: black;
-  text-align: center;
-  line-height: 20px;
+  line-height: 18px;
 }
 @media (min-width: 768px) {
   .popup div {
-    height: 150px;
-    padding: 10px 20px 20px;
+    line-height: 15px;
+    padding: 10px 20px 20px 30px;
   }
 }
 
@@ -331,7 +322,7 @@ svg {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 311%;
+  height: 360%;
   display: block;
 }
 @media (min-width: 768px) {
@@ -387,7 +378,7 @@ svg {
   top: 0;
   text-align: center;
   margin: 4px 0 0;
-  padding: 1px 15px;
+  padding: 1px;
   animation-name: pulse_animation;
   animation-duration: 3000ms;
   transform-origin: 70% 70%;
@@ -449,7 +440,7 @@ svg {
   width: 100%;
   z-index: 0;
   position: absolute;
-  height: 210px;
+  height: 200px;
   margin: 0;
 }
 .indexHeader img.hdr-img2 {
@@ -458,6 +449,9 @@ svg {
   position: absolute;
   height: 310px;
   margin: 0;
+}
+.indexHeader .mobileHeader {
+  display: none;
 }
 
 header img {
@@ -476,6 +470,12 @@ nav {
     flex-direction: row;
     position: relative;
     top: -60px;
+    left: -60px;
+  }
+}
+@media (min-width: 1024px) {
+  nav {
+    left: -100px;
   }
 }
 nav navTabs li:nth-child(1) {
@@ -500,11 +500,11 @@ nav .svgNav-3 {
 }
 nav .svgNav-1 {
   width: 98px;
-  left: 45px;
+  left: 27px;
 }
 nav .svgNav-2 {
   width: 98px;
-  left: 64px;
+  left: 46px;
 }
 nav .svgNav-3 {
   width: 98px;
@@ -542,10 +542,10 @@ nav .text {
   line-height: 48px;
   font-weight: 800;
   position: relative;
-  right: 29px;
+  right: 48px;
 }
 nav .position-1 {
-  right: 32px;
+  right: 47px;
 }
 nav .position-2 {
   right: 31px;
@@ -578,6 +578,55 @@ nav .svg-wrapper:hover .shape-3 {
   animation: 0.5s draw linear forwards;
 }
 
+.returnToTop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  background: white;
+  opacity: .8;
+  width: 100%;
+  height: 35px;
+  display: block;
+  text-decoration: none;
+  -moz-border-radius: 35px;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 60%;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.returnToTop i {
+  display: flex;
+  margin: auto;
+  color: black;
+  margin: 0;
+  position: fixed;
+  z-index: 1;
+  left: 49%;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.returnToTop:hover {
+  background: wheat;
+  height: 20px;
+}
+
+.returnToTop:hover i {
+  color: #fff;
+  top: 3px;
+}
+
 .flex {
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -586,7 +635,6 @@ nav .svg-wrapper:hover .shape-3 {
 @media (min-width: 768px) {
   .flex {
     display: -ms-flexbox;
-    /* TWEENER - IE 10 */
     display: flex;
     max-width: 1100px;
     min-width: 800px;
@@ -656,23 +704,19 @@ ul.skills {
 
 .footer {
   display: flex;
-  flex-direction: inherit;
-  flex-wrap: wrap;
+  flex-direction: column;
   color: white;
-  position: absolute;
-  z-index: 2000;
-  top: 305%;
+  height: 449px;
   width: 100%;
-  height: 440px;
   background-size: cover;
   overflow: hidden;
   margin-top: 50px;
 }
 @media (min-width: 768px) {
   .footer {
+    flex-direction: row;
     top: 1040px;
     height: 300px;
-    margin-top: 10px;
   }
 }
 @media (min-width: 1024px) {
@@ -684,8 +728,16 @@ ul.skills {
   width: 100%;
   z-index: 0;
   position: absolute;
-  height: 100%;
   margin: 0;
+}
+.footer img {
+  width: 50%;
+  height: 52%;
+}
+@media (min-width: 768px) {
+  .footer img {
+    height: 36%;
+  }
 }
 @media (min-width: 768px) {
   .footer {
@@ -701,17 +753,12 @@ ul.skills {
 .footer .container-1 {
   z-index: 1;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .footer .container-1 {
-    width: 40%;
-    align-self: center;
-    margin-left: 50px;
-  }
+  height: 100%;
+  flex: 2;
 }
 @media (min-width: 1024px) {
   .footer .container-1 {
-    margin-left: 0;
+    flex: 3;
   }
 }
 .footer .container-1 div {
@@ -721,29 +768,67 @@ ul.skills {
   margin: auto;
   width: 90%;
 }
+@media (min-width: 768px) {
+  .footer .container-1 div {
+    margin-top: 100px;
+    text-align: inherit;
+    max-width: 470px;
+    min-height: 128px;
+    max-height: 130px;
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer .container-1 div {
+    width: 100%;
+    font-size: 1.1em;
+    margin-top: 85px;
+    margin-left: 18%;
+  }
+}
 .footer .container-1 h1 {
   width: 100%;
   text-align: center;
   margin-bottom: 47px;
 }
-.footer .container-3 {
-  align-self: initial;
-  z-index: 1;
-  width: 90%;
-  margin: auto;
-  margin-right: 4px;
-}
 @media (min-width: 768px) {
-  .footer .container-3 {
-    width: 38%;
-    margin-top: 20px;
-    margin-left: 200px;
+  .footer .container-1 h1 {
+    margin-top: 17px;
+    width: 90%;
   }
+}
+@media (min-width: 1024px) {
+  .footer .container-1 h1 {
+    margin-top: 23px;
+  }
+}
+.footer .container-3 {
+  z-index: 1;
+  margin: auto;
+  flex: 2;
+}
+@media (min-width: 1024px) {
+  .footer .container-3 {
+    flex: 3;
+  }
+}
+.footer .container-3 h1 {
+  width: 105%;
 }
 .footer #socialIcons {
   display: flex;
   justify-content: space-around;
-  margin-left: 50px;
+  padding-left: 37px;
+}
+@media (min-width: 768px) {
+  .footer #socialIcons {
+    margin: 90px 0 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .footer #socialIcons {
+    margin: 80px 0 0 40px;
+  }
 }
 .footer .svgEffect:hover {
   transition: .4s ease-out;
@@ -813,12 +898,10 @@ ul.skills {
     margin-top: 20px;
   }
 }
-.footer1 #socialIcons {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  margin: auto;
-  padding-left: 30px;
+@media (min-width: 1024px) {
+  .footer1 .container-3 {
+    margin-top: 31px;
+  }
 }
 .footer1 .svgEffect:hover {
   transition: .4s ease-out;

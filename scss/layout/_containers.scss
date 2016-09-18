@@ -4,7 +4,7 @@
     min-width: 300px;
     position: relative;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -14,10 +14,10 @@
       max-width: 750px;
       min-width: 300px;
       margin-top: 1px;
-      // top: 50px;
     }
     @include respond-to(desktop) {
       max-width: 950px;
+      margin: auto;
     }
 }
 
@@ -40,7 +40,6 @@
     height: 200px;
     top: 0;
     right: 0;
-    // background: url('../img/1.png') no-repeat;
     background-size: cover;
     -webkit-backface-visibility:hidden;
     -moz-backface-visibility:hidden;
@@ -56,8 +55,6 @@
 }
 .back{
     z-index: 0;
-    // top:-180px;
-    // position: absolute;
     background: #34495e;
     -webkit-transform:rotatey(180deg);
     -moz-transform:rotatey(180deg);
@@ -90,7 +87,7 @@
 
 .button {
   left: 135px;
-  bottom: 170px;
+  bottom: 160px;
   @include respond-to(tablet) {
     left: 110px;
     bottom: 110px;
@@ -98,7 +95,7 @@
 }
 .button1 {
   left: 15px;
-  bottom: 120px;
+  bottom: 110px;
   cursor: pointer;
   @include respond-to(tablet) {
     left: 20px;
@@ -125,10 +122,6 @@
     }
 }
 
-// .buttons {
-//   z-index: 5000;
-// }
-
 .background {
     border-radius: 0 100px;
     background-size: cover;
@@ -149,9 +142,9 @@
   display: none;
   position: fixed;
   z-index: 1000000;
-  left: -2vw;
+  left: 20px;
   margin-left: 35px;
-  top: 10vh;
+  top: 12vh;
   margin-top: -200px;
   opacity: 1;
   transition: all 1s;
@@ -164,17 +157,16 @@
 .popup div {
   width: 100%;
   max-width: 250px;
-  height: 160px;
+  height: 170px;
   font-size: 15px;
-  padding: 10px 10px 10px;
+  padding: 15px 10px 1px 20px;
   background-color: #e6e6fa;
   border-radius: 40px;
   color: black;
-  text-align: center;
-  line-height: 20px;
+  line-height: 18px;
   @include respond-to(tablet) {
-    height: 150px;
-    padding: 10px 20px 20px;
+    line-height: 15px;
+    padding: 10px 20px 20px 30px;
   }
 }
 

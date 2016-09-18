@@ -7,6 +7,10 @@ nav {
     	flex-direction: row;
     	position: relative;
     	top: -60px;
+    	left: -60px;
+    }
+    @include respond-to(desktop) {
+    	left: -100px;
     }
 	navTabs li:nth-child(1) {
 	    padding: 10px 15px 5px;
@@ -31,12 +35,12 @@ nav {
 
 	.svgNav-1 {
 		width: 98px;
-		left: 45px;
+		left: 27px;
 	}
 
 	.svgNav-2 {
 		width: 98px;
-		left: 64px;
+		left: 46px;
 	}
 
 	.svgNav-3 {
@@ -57,9 +61,6 @@ nav {
     	width: 95px;
     	fill: white;
     	fill-opacity: -1;
-    
-		// stroke-dasharray: 61 540;
-	 //  	stroke-dashoffset: -100;
 	}
 
 	.shape-2 {
@@ -73,8 +74,6 @@ nav {
 	    stroke-dasharray: 89 540;
 		stroke-dashoffset: -137;
 		width: 95px;
-	  	// stroke-dasharray: 84 540;
-    // 	stroke-dashoffset: -127;
 	}
 
 
@@ -87,11 +86,11 @@ nav {
 	    line-height: 48px;
 	    font-weight: 800;
 	    position: relative;
-	    right: 29px;
+	    right: 48px;
 	}
 
 	.position-1 {
-		right: 32px;
+		right: 47px;
 	}
 
 	.position-2 {
@@ -115,7 +114,6 @@ nav {
 	.svg-wrapper {
 		display: flex;
 		justify-content: center;
-		// transform: translateY(-50%);
 		@include respond-to(tablet) {
 			flex-direction: row;
 		}
@@ -129,3 +127,48 @@ nav {
 	}
 }
 
+	.returnToTop {
+        position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    bottom: 0;
+	    background: white;
+	    opacity: .8;
+	    width: 100%;
+	    height: 35px;
+	    display: block;
+	    text-decoration: none;
+	    -moz-border-radius: 35px;
+	    border-bottom-right-radius: 60%;
+	    border-bottom-left-radius: 60%;
+	    display: none;
+	    -webkit-transition: all 0.3s linear;
+	    -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease;
+	}
+	.returnToTop i {
+		display: flex;
+		margin: auto;
+	    color: black;
+	    margin: 0;
+	    position: fixed;
+	    z-index: 1;
+	    left: 49%;
+	    top: 13px;
+	    font-size: 19px;
+	    -webkit-transition: all 0.3s ease;
+	    -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	    -o-transition: all 0.3s ease;
+	    transition: all 0.3s ease;
+	}
+	.returnToTop:hover {
+	    background: wheat;
+	    height: 20px
+	}
+	.returnToTop:hover i {
+	    color: #fff;
+	    top: 3px;
+	}
