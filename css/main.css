@@ -44,7 +44,7 @@ svg {
   min-width: 300px;
   position: relative;
   margin: auto;
-  margin-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -313,53 +313,19 @@ svg {
     background-position: 10000px 0;
   }
 }
-.stars,
-.twinkling,
-.clouds {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 360%;
-  display: block;
-}
-@media (min-width: 768px) {
-  .stars,
-  .twinkling,
-  .clouds {
-    height: 135%;
-  }
-}
-@media (min-width: 1024px) {
-  .stars,
-  .twinkling,
-  .clouds {
-    height: 112%;
-  }
-}
-
 .stars {
-  background: #000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-}
-
-.twinkling {
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-  -moz-animation: move-twink-back 200s linear infinite;
-  -ms-animation: move-twink-back 200s linear infinite;
-  -o-animation: move-twink-back 200s linear infinite;
-  -webkit-animation: move-twink-back 200s linear infinite;
-  animation: move-twink-back 200s linear infinite;
-}
-
-.clouds {
-  background: transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  background: url(../img/stars.png) repeat top center, url(../img/twinkling.png) no-repeat top center, url(../img/clouds3.png) repeat top center;
+  -moz-animation: move-twink-back 800s linear infinite;
+  -ms-animation: move-twink-back 800s linear infinite;
+  -o-animation: move-twink-back 800s linear infinite;
+  -webkit-animation: move-twink-back 800s linear infinite;
+  animation: move-twink-back 800s linear infinite;
   -moz-animation: move-clouds-back 200s linear infinite;
   -ms-animation: move-clouds-back 200s linear infinite;
   -o-animation: move-clouds-back 200s linear infinite;
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite;
+  background-color: #000;
 }
 
 .indexHeader {
@@ -440,7 +406,7 @@ svg {
   width: 100%;
   z-index: 0;
   position: absolute;
-  height: 200px;
+  height: 212px;
   margin: 0;
 }
 .indexHeader img.hdr-img2 {
@@ -706,55 +672,53 @@ ul.skills {
   display: flex;
   flex-direction: column;
   color: white;
-  height: 449px;
   width: 100%;
   background-size: cover;
+  background-image: url(../img/footer-small.jpg);
+  background-position: bottom;
+  box-shadow: 0 -5px 11px rgba(0, 0, 0, 0.93), 1px 3px 10px #737272, 1px 12px 21px rgba(0, 0, 0, 0.93) inset;
   overflow: hidden;
-  margin-top: 50px;
 }
 @media (min-width: 768px) {
   .footer {
     flex-direction: row;
-    top: 1040px;
-    height: 300px;
+    background-image: url(../img/footer-medium.jpg);
+    background-position: top;
+    box-shadow: 0 -5px 11px rgba(0, 0, 0, 0.93), 1px 3px 10px #737272, 1px 12px 21px rgba(0, 0, 0, 0.93) inset;
   }
 }
 @media (min-width: 1024px) {
   .footer {
-    top: 900px;
+    background-image: url(../img/footer-large.jpg);
   }
 }
 .footer .bkr2 {
   width: 100%;
+  height: 449px;
   z-index: 0;
   position: absolute;
   margin: 0;
 }
-.footer img {
-  width: 50%;
-  height: 52%;
-}
 @media (min-width: 768px) {
-  .footer img {
-    height: 36%;
-  }
-}
-@media (min-width: 768px) {
-  .footer {
-    flex-wrap: nowrap;
+  .footer .bkr2 {
+    height: 298px;
   }
 }
 .footer h1 {
   color: white;
   letter-spacing: .15em;
   text-shadow: 1px -1px 0 #767676,  -1px 2px 1px #737272,  -2px 4px 1px #767474,  -3px 6px 1px #787777,  -4px 8px 1px #7b7a7a,  -5px 10px 1px #e4e3e2;
-  text-align: center;
 }
 .footer .container-1 {
   z-index: 1;
   width: 100%;
-  height: 100%;
   flex: 2;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .footer .container-1 {
+    margin-top: 0;
+  }
 }
 @media (min-width: 1024px) {
   .footer .container-1 {
@@ -764,48 +728,44 @@ ul.skills {
 .footer .container-1 div {
   margin-left: 30px;
   max-width: 350px;
-  text-align: center;
+  min-height: 120px;
   margin: auto;
-  width: 90%;
+  width: 80%;
+  padding-left: 10px;
 }
 @media (min-width: 768px) {
   .footer .container-1 div {
-    margin-top: 100px;
-    text-align: inherit;
+    margin-top: 110px;
+    padding-left: 60px;
     max-width: 470px;
-    min-height: 128px;
-    max-height: 130px;
-    margin-left: 30px;
   }
 }
 @media (min-width: 1024px) {
   .footer .container-1 div {
     width: 100%;
     font-size: 1.1em;
-    margin-top: 85px;
-    margin-left: 18%;
   }
 }
 .footer .container-1 h1 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 47px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .footer .container-1 h1 {
-    margin-top: 17px;
-    width: 90%;
-  }
-}
-@media (min-width: 1024px) {
-  .footer .container-1 h1 {
-    margin-top: 23px;
+    margin-top: 35px;
   }
 }
 .footer .container-3 {
   z-index: 1;
-  margin: auto;
-  flex: 2;
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .footer .container-3 {
+    margin: 0 auto 0 auto;
+    flex: 2;
+    padding-top: 0;
+  }
 }
 @media (min-width: 1024px) {
   .footer .container-3 {
@@ -813,21 +773,24 @@ ul.skills {
   }
 }
 .footer .container-3 h1 {
-  width: 105%;
+  margin-top: 21px;
+  margin-right: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer .container-3 h1 {
+    padding-left: 15%;
+    margin-top: 35px;
+  }
 }
 .footer #socialIcons {
   display: flex;
   justify-content: space-around;
-  padding-left: 37px;
+  padding-left: 16%;
 }
 @media (min-width: 768px) {
   .footer #socialIcons {
     margin: 90px 0 0 40px;
-  }
-}
-@media (min-width: 1024px) {
-  .footer #socialIcons {
-    margin: 80px 0 0 40px;
   }
 }
 .footer .svgEffect:hover {
