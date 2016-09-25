@@ -2,38 +2,32 @@
     display: flex;
     flex-direction: column;
     color: white;
-    height: 449px;
     width: 100%;
     background-size: cover;
+    background-image: url(../img/footer-small.jpg);
+    background-position: bottom;
+    box-shadow: 0 -5px 11px rgba(0, 0, 0, 0.93), 1px 3px 10px #737272, 1px 12px 21px rgba(0, 0, 0, 0.93) inset;
     overflow: hidden;
-    margin-top: 50px;
     @include respond-to(tablet) {
       flex-direction: row;
-      top: 1040px;
-      height: 300px;
+      background-image: url(../img/footer-medium.jpg);
+      background-position: top;
+      box-shadow: 0 -5px 11px rgba(0, 0, 0, 0.93), 1px 3px 10px #737272, 1px 12px 21px rgba(0, 0, 0, 0.93) inset;
     }
     @include respond-to(desktop) {
-      top: 900px;
+      background-image: url(../img/footer-large.jpg);
     }
 
   .bkr2 {
+
     width: 100%;
+    height: 449px;
     z-index: 0;
     position: absolute;
     margin: 0;
-  }
-
-  img {
-  width: 50%;
-  height: 52%;
-  @include respond-to(tablet) {
-    height: 36%;
-  }
-  
-}
-
-  @include respond-to(tablet) {
-    flex-wrap: nowrap;
+    @include respond-to(tablet) {
+      height: 298px;
+    }
   }
 
   & h1 {
@@ -46,14 +40,16 @@
       -3px 6px 1px #787777, 
       -4px 8px 1px #7b7a7a, 
       -5px 10px 1px #e4e3e2;
-    text-align: center;
   }
 
   .container-1 {
     z-index: 1;
     width: 100%;
-    height: 100%;
     flex: 2;
+    margin-top: 20px;
+    @include respond-to(tablet) {
+      margin-top: 0;
+    }
     @include respond-to(desktop) {
       flex: 3;
     }
@@ -62,50 +58,50 @@
   .container-1 div {
     margin-left: 30px;
     max-width: 350px;
-    text-align: center;
+    min-height: 120px;
     margin: auto;
-    width: 90%;
+    width: 80%;
+    padding-left: 10px;
     @include respond-to(tablet) {
-      margin-top: 100px;
-      text-align: inherit;
+      margin-top: 110px;
+      padding-left: 60px;
       max-width: 470px;
-      min-height: 128px;
-      max-height: 130px;
-      margin-left: 30px;
     }
     @include respond-to(desktop) {
       width: 100%;
       font-size: 1.1em;
-      margin-top: 85px;
-      margin-left: 18%;
     }
   }
 
   .container-1 h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 47px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
     @include respond-to(tablet) {
-      margin-top: 17px;
-      width: 90%
-    }
-    @include respond-to(desktop) {
-      margin-top: 23px;
+      margin-top: 35px;
     }
   }
 
   .container-3 {
     z-index: 1;
-    margin: auto;
-    flex: 2;
+    padding-top: 60px;
     @include respond-to(tablet) {
+      margin: 0 auto 0 auto;
+      flex: 2;
+      padding-top: 0;
     }
     @include respond-to(desktop) {
       flex: 3;
     }
 
     & h1 {
-      width: 105%;
+      margin-top: 21px;
+      margin-right: 0;
+      text-align: center;
+      @include respond-to(tablet) {
+        padding-left: 15%;
+        margin-top: 35px;
+      }
     }
   }
 
@@ -113,12 +109,9 @@
   #socialIcons {
     display: flex;
     justify-content: space-around;
-    padding-left: 37px;
+    padding-left: 16%;
     @include respond-to(tablet) {
       margin: 90px 0 0 40px;
-    }
-    @include respond-to(desktop) {
-      margin: 80px 0 0 40px;
     }
   }
 
