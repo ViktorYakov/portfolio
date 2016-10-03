@@ -106,9 +106,8 @@ svg {
 .back {
   z-index: 0;
   background: #34495e;
-  -webkit-transform: rotatey(180deg);
-  -moz-transform: rotatey(180deg);
-  transform: rotatey(167deg);
+  -webkit-transform: rotateY(167deg);
+  -moz-transform: rotateY(180deg);
   border-radius: 0 100px;
   background-color: white;
   background-size: cover;
@@ -137,6 +136,7 @@ svg {
 
 .flip {
   -webkit-transform: rotateY(195deg);
+  -moz-transform: rotateY(180deg);
 }
 
 .button {
